@@ -1,3 +1,12 @@
+//Resumen Clase 1:
+//  - Crear variables (let, const)
+//      - TEXTO  -> String
+//      - NUMERO -> Number
+//  - Asignar valores
+//  - Prompt / Alert / Console.log
+//  - Algoritmos
+
+
 // pido edad al usuario
 let edad = prompt('ingresa tu edad')
 
@@ -8,8 +17,8 @@ let edadConvertida = +edad  // Texto -> Numero
 let edadSumada = edadConvertida + 5
 
 // muestro esa edad
-// console.log(edadSumada)
-alert(edadSumada)
+console.log(edadSumada)
+// alert(edadSumada)
 
 
 //-------------------------------------------------------------

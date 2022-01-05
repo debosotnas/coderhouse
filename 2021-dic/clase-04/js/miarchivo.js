@@ -184,5 +184,5 @@ const saludar1 = (nombre) => {
 const saludar2 = (nombre) => console.log('nombre: ', nombre);
 
 saludar('alumno brillante');
-saludar1('estudiante modelo');
+saludar3('estudiante modelo');
 saludar2('y yo');

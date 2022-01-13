@@ -266,3 +266,18 @@ console.log(baratos);//
 const aumentos = productos.map(producto => producto.precio += 30);
 console.log(aumentos);
 //[155, 100, 80, 130] y el valor de cada producto cambio
+
+
+
+/*
+// Clase 06 (pendiente para la siguiente clase)
+
+const myArray = ['esto', 'es', 'una', 'frase', 'desde', 'un', 'array']
+
+const arrayReducido = myArray.reduce((prev, curr) => {
+    console.log('valor previo: ', prev);
+    return prev + ' ' + curr;
+}, '');
+
+console.log('resultado (array reducido): ', arrayReducido);
+*/

@@ -136,7 +136,7 @@ function Persona(nombre, edad, altura, peso) {
 const miPersona1 = new Persona('checho', 14, 145, 60);
 */
 
-
+/*
 // Class
 class Persona {
 
@@ -161,7 +161,7 @@ class Persona {
 
 // la linea siguiente, crea una "instancia" de Persona
 const miOtraPersona = new Persona('checho', 14);
-
+*/
 /********************************
 
 
@@ -182,6 +182,21 @@ const miOtraPersona = new Persona('checho', 14);
 
 // }
 
-
-
 */
+const miArray = [10,30,50,70];
+
+for (let i = 0; i < miArray.length; i++) {
+    console.log(miArray[i]) // i -> 0 --- i -> 1 .... i -> 3
+}
+
+console.log(' ======================== ');
+
+for (let valor of miArray) {
+    console.log(valor);
+}
+
+console.log(' ======================== ');
+
+miArray.forEach(function(valor, i) {
+    console.log('clave: ', i, ' - valor: ', valor);
+});

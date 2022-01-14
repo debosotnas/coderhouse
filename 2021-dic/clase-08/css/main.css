@@ -1,0 +1,26 @@
+.container {
+    margin-top: 40px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+/* clase - seleccionando */
+.text-center {
+    text-align: center;
+}
+
+.menu-principal {
+    color: blueviolet;
+}
+
+#titulo {
+    color: blueviolet;
+}
+
+/*
+.row ul li{
+    color: yellowgreen;
+}
+*/

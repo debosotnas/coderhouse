@@ -1,0 +1,1 @@
+console.log('este es un console del archivo main.js');

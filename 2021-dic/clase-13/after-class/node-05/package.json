@@ -1,0 +1,19 @@
+{
+  "name": "pruebaparaafter",
+  "version": "1.0.0",
+  "description": "este es un proyecto de prueba para el after",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "after"
+  ],
+  "author": "obed",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "lugares": [
+        { "valor": "mexico", "titulo": "Méjico" },
+        { "valor": "panama", "titulo": "Panamá" },
+        { "valor": "canada", "titulo": "Canadá" },
+        { "valor": "egipto", "titulo": "Egipto" }
+    ]
+}

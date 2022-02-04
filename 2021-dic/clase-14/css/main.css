@@ -1,0 +1,91 @@
+.container {
+    margin-top: 40px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 25px;
+    text-align: center;
+}
+h3.carrito {
+    color:cadetblue
+}
+
+/* clase - seleccionando */
+.text-center {
+    text-align: center;
+}
+
+.menu-principal {
+    background-color:azure;
+}
+.menu-principal > div {
+    color: #00aaf0;
+    font-weight:bold;
+    margin: 5px;
+    font-size: 20px;
+}
+.menu-principal ul {
+    padding-left: 10px;
+}
+.menu-principal li {
+    list-style-type: none;
+}
+
+#titulo {
+    color: blueviolet;
+}
+
+#productos-disponibles, #mi-carrito, #fotos-disponibles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.producto {
+    border: 1px solid #00aaf0;
+    width: 200px;
+    margin: 10px 5px;
+    /* max-width: 300px; */
+    /* flex-grow: 1; */
+}
+.producto h4 {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.producto .image {
+    width: 180px;
+    height: 130px;
+    margin: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.producto .downline {
+    text-align: center;
+    padding: 5px;
+}
+
+.producto.galeria-foto {
+    overflow: hidden;
+    text-align: center;
+}
+
+.producto.galeria-foto img {
+    max-width: 180px;
+    max-height: 150px;
+}
+
+.total-carrito {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color:blue;
+    margin-bottom: 80px;
+}

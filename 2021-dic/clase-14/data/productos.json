@@ -1,0 +1,60 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Arroz",
+            "precio": 125,
+            "stock": 2,
+            "image": "01-arroz.jpeg"
+        },
+        {
+            "id": 2,
+            "nombre": "Fideo",
+            "precio": 70,
+            "stock": 2,
+            "image": "02-fideo.jpeg"
+        },
+        {
+            "id": 3,
+            "nombre": "Pan",
+            "precio": 50,
+            "stock": 2,
+            "image": "03-pan.jpeg"
+        },
+        {
+            "id": 4,
+            "nombre": "Flan",
+            "precio": 100,
+            "stock": 2,
+            "image": "04-flan.jpeg"
+        },
+        {
+            "id": 5,
+            "nombre": "Azucar",
+            "precio": 60,
+            "stock": 2,
+            "image": "05-azucar.jpeg"
+        },
+        {
+            "id": 6,
+            "nombre": "Polenta",
+            "precio": 50,
+            "stock": 2,
+            "image": "06-polenta.jpeg"
+        },
+        {
+            "id": 7,
+            "nombre": "Lentejas",
+            "precio": 40,
+            "stock": 2,
+            "image": "07-lentejas.jpeg"
+        },
+        {
+            "id": 8,
+            "nombre": "Lechuga",
+            "precio": 60,
+            "stock": 2,
+            "image": "08-lechuga.jpeg"
+        }
+    ]
+}

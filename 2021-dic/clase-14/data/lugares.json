@@ -1,0 +1,11 @@
+{
+    "lugares": [
+        { "valor": "uruguay", "titulo": "Uruguay" },
+        { "valor": "argentina", "titulo": "Argentina" },
+        { "valor": "peru", "titulo": "Perú" },
+        { "valor": "chile", "titulo": "Chile" },
+        { "valor": "francia", "titulo": "Francia" },
+        { "valor": "ecuador", "titulo": "Ecuador" },
+        { "valor": "venezuela", "titulo": "Venezuela" }
+    ]
+}

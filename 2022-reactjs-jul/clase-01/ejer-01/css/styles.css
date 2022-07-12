@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#app {
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px 50px;
+}
+
+.cabezal {
+    height: 528px;
+    padding-left: 30px;
+    color: #203E12;
+}
+/* para usar con index-alternativo.js
+.cabezal h1 { 
+    font-size: 8rem;
+    font-weight: bold;
+} */
+.cabezal {
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+#bloque-cuerpo { 
+    margin-top: 38px;
+    display: flex;
+}
+
+#bloque-cuerpo div { 
+    width: 25%;
+    margin-right: 20px;
+}
+#bloque-cuerpo div:last-child { 
+    margin-right: 0;
+    text-align: right;
+    padding: 30px 20px 30px 30px;
+    font-size: 1rem;
+}
+
+#bloque-cuerpo .bloque-1,#bloque-cuerpo .bloque-2, #bloque-cuerpo .bloque-3 {
+    background-color: #bbb;
+}
+
+.pie {
+    background-color: #C0FFBB;
+    margin-top: 39px;
+    padding: 20px;
+    text-align: center;
+    color: #1B5116;
+    font-weight: bold;
+}
+
+.bloque-texto {
+    text-align: center;
+    padding: 40px 50px 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cabezal {
+    background: url(../img/bg-top.jpeg) no-repeat top left/cover;
+}
+#bloque-cuerpo .bloque-1 {
+    background: url(../img/ico-01.jpeg) no-repeat top left/cover;
+}
+#bloque-cuerpo .bloque-2 {
+    background: url(../img/ico-02.jpeg) no-repeat top left/cover;
+}
+#bloque-cuerpo .bloque-3 {
+    background: url(../img/ico-03.jpeg) no-repeat top left/cover;
+}

@@ -1,0 +1,62 @@
+/*
+- color bg 1: #5E9943
+- color bg 2: #EADFB8
+- font 1: #5E3A04
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+#app {
+    max-width: 1440px;
+    margin: auto;
+    padding: 32px 52px;
+}
+
+.cabezal {
+    background-color: #5E9943;
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+.cabezal h1 { 
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.cuerpo {
+    background: #EADFB8 url(../img/bg-transparent.png) no-repeat right bottom/152px;
+    padding: 100px 95px;
+}
+
+.cuerpo ol {
+    list-style-position: inside;
+}
+
+.cuerpo ol li {
+    font-weight: bold;
+    line-height: 2;
+}
+
+.pie {
+    text-align: center;
+    margin-top: 15px;
+}
+.pie a, .pie .copyright {
+    font-size: 1rem;
+    color: #5E3A04;
+    font-weight: bold;
+}
+
+.pie a {
+    text-decoration: none;
+}

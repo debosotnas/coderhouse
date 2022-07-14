@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer 00 - Uso basico de React</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root" />
+
+    <script type="text/javascript">
+        // obtenemos el elemento html que será el contenedor 
+        // principal de nuestra App
+        const appContainer = document.querySelector('#root');
+
+
+/*********************************************/
+// Desde acá es donde más adelante irá nuestra aplicación.
+// Para este ejemplo usamos VanillaJs, luego usaremos JSX
+
+        // definimos un elemento que será parte de nuestra App
+        const myDiv = React.createElement('div', null, 'hola mundo!');
+            //podemos configurar el elemento creato, seguir agregando otros elementos, etc.
+        //...
+        //...
+
+// Hasta acá es donde más adelante irá nuestra aplicación.
+/*********************************************/
+
+
+        // indicamos dónde ReactDOM (reconciliation)
+        const appRoot = ReactDOM.createRoot(appContainer);
+
+        // Finalmente, mostramos el codigo react en el DOM del browser
+        appRoot.render(myDiv);
+    </script>
+</body>
+</html>

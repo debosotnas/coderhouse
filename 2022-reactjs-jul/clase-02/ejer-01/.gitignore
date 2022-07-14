@@ -1,0 +1,5 @@
+# instalación de módulos
+/node_modules
+
+# archivos no necesarios de Mac
+.DS_Store

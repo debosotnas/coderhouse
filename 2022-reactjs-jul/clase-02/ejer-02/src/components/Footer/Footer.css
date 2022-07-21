@@ -1,0 +1,19 @@
+.copy, .links {
+    text-align: center;
+}
+.links {
+    background-color: #edf7ff;
+    padding: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.copy {
+    background-color: #eceaff;
+    padding: 10px;
+    font-size: .8rem;
+    font-weight: bold;
+}

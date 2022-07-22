@@ -1,0 +1,12 @@
+.product-cpm {
+    min-height: 195px;
+    background-color: #F6FEFF;
+    padding: 22px;
+}
+img {
+    max-width: 200px;
+}
+
+.content {
+    text-align: right;
+}

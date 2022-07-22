@@ -1,0 +1,19 @@
+.card-cmp {
+    background-color: #FEFFE5;
+    border: 1px solid #E7E8BA;
+    filter: drop-shadow(0 0 10px #00000033);
+    /* min-height: 328px; */
+    padding: 25px;
+}
+
+.card-cmp h2 {
+    color: #839D37;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.product-card {
+    background-color: #F6FEFF;
+    border-color: #A3D7E2;
+}

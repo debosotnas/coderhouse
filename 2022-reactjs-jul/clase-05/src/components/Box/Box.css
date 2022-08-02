@@ -1,0 +1,10 @@
+.user-box {
+    padding: 40px;
+    min-height: 200px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 200px; */
+    /* width: 30%; */
+    width: 150px;
+}

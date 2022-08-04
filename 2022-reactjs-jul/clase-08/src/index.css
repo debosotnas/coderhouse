@@ -13,24 +13,24 @@ code {
 }
 
 
-/* ---------------------- */
-
 .page {
-  height: 100vh;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+}
+.page h1 { 
+  font-size: 100px;
 }
 
-.page h1 {
-  font-size: 75px;
+.page a {
+ font-size: 40px;
+ margin: 10px;
+ text-decoration: none;
 }
 
-.page .nav {
-  font-size: 30px;
-}
-
-.page .class-for-active-link{
-  background-color: aquamarine;
+.pagina-activa {
+  background-color: aqua;
+  border: 2px solid #9090f0;
+  
 }

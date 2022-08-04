@@ -1,0 +1,19 @@
+.user-details {
+    background-color: antiquewhite;
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100px;
+    border: 6px solid #ecff60;
+    margin: 10px;
+}
+
+.user-id {
+    font-size: 10px;
+    margin-bottom: 10px;
+}

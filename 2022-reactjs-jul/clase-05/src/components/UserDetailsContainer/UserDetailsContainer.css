@@ -1,0 +1,13 @@
+.user-details-container {
+    border: 1px solid #333;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

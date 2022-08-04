@@ -1,4 +1,9 @@
 .box-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.box-list > div {
+    margin-top: 20px;
 }

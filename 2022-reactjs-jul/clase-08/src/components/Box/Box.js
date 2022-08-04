@@ -1,22 +1,23 @@
 import "./Box.css";
-
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Box({ id, img, name, last }) {
-    const navigate = useNavigate();
+
+    const navigateFn = useNavigate();
 
     const loadUserDetails = () => {
         console.log(' UserId > ', id);
-        navigate('/users/' + id);
+        navigateFn(`/users/${id}`);
     }
 
     return (
         <div className="user-box">
             <img src={img} />
-            <span className="user-id">ID: {id}</span>
+            <span>ID: {id}</span>
             <span>{`${name} ${last}`}</span>
 
-            <button onClick={loadUserDetails}>Ver detalles</button>
+            <button onClick={loadUserDetails}>Cargar Detalles del User</button>
+            <Link to={`/users/${id}` }>Ver detalles</Link>
         </div>         
     );
 }

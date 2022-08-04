@@ -7,9 +7,8 @@
     /* max-width: 200px; */
     /* width: 30%; */
     width: 150px;
-    text-align: center;
 }
 
-.user-id {
-    font-size: 9px;
+.user-box img {
+    border: 6px solid rgb(123, 161, 56);
 }

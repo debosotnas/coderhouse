@@ -16,7 +16,7 @@ code {
 /* ---------------------- */
 
 .page {
-  height: 100vh;
+  /* height: 80vh; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -27,10 +27,10 @@ code {
   font-size: 75px;
 }
 
-.page .nav {
+.app .nav {
   font-size: 30px;
 }
 
-.page .class-for-active-link{
+.app .class-for-active-link{
   background-color: aquamarine;
 }

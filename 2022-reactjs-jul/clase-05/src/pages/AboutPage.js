@@ -1,11 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 
-export default function About () {
+export default function AboutPage () {
 
     return (
         <div className="page">
-            <h1>Welcome Home!</h1>
-            <div className="nav">
+            <h1>About Us!</h1>
+            {/* <div className="nav">
                 <Link to={'/users'}>Show Users</Link>
                 {' '}
                 <NavLink 
@@ -17,7 +17,7 @@ export default function About () {
                     to={'/about-us'}
                     className={({isActive}) => isActive ? 'class-for-active-link' : undefined }
                 >About Us</NavLink>
-            </div>
+            </div> */}
         </div>
     );
 }

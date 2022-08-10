@@ -12,14 +12,14 @@ function Box({ id, img, name, last }) {
     }
 
     const navigate = useNavigate();
-    useEffect(() => {
+    // useEffect(() => {
 
-        document.getElementById(`id-${id}`).addEventListener('click', fnOnClickPersonal);
+    //     document.getElementById(`id-${id}`).addEventListener('click', fnOnClickPersonal);
 
-        return () => {
-            document.getElementById(`id-${id}`).removeEventListener('click', fnOnClickPersonal);            
-        }
-    });
+    //     return () => {
+    //         document.getElementById(`id-${id}`).removeEventListener('click', fnOnClickPersonal);            
+    //     }
+    // });
 
     const loadUserDetails = () => {
         console.log(' UserId > ', id);
@@ -36,7 +36,7 @@ function Box({ id, img, name, last }) {
 
             <button onClick={loadUserDetails}>Ver detalles</button>
             <br />
-            <button id={`id-${id}`}>Ver LinkedIn</button>
+            <button onClick={fnOnClickPersonal}>Ver LinkedIn</button>
 
         </div>         
     );

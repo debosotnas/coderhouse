@@ -1,0 +1,40 @@
+.item-count {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    gap: 5px
+}
+
+.item-count > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    border: 1px solid #f0f0f0;
+    background-color: #ecd3d0;
+    font-weight: bold;
+    color: #9d382d;
+}
+
+.item-count button, .item-count button:focus, .item-count button:active {
+    background-color: #fcc0b9;
+    border: 1px solid #fa8072;
+    color: #9d382d;
+    outline: #9d382d;
+}
+
+.item-count button:hover {
+    background-color: #9d382d;
+    border: 1px solid #ffb2a9;
+    color: #ffb2a9;
+    font-weight: bold;
+}
+
+
+.item-count > button {
+    background-color: #ecd3d0;
+}
+
+.item-count button:hover {
+    color: #fff0ef;
+}

@@ -1,0 +1,35 @@
+.item-detail {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.item-detail:hover {
+    background-color: rgb(235, 236, 255);
+}
+
+.item-detail img {
+    border: 3px solid rgb(248, 185, 140);
+}
+
+.item-detail .title {
+    color: tomato;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.item-detail:hover .title {
+    color: blueviolet;
+}
+.item-detail:hover img {
+    border: 3px solid rgb(147, 140, 248);
+}
+
+.item-detail p {
+    font-size: 18px;
+    /* margin: 10px; */
+}

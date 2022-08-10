@@ -1,0 +1,61 @@
+.nav-bar {
+    background-color: #444d6f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-bar .logo {
+    min-width: 100px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 20px;
+    color: antiquewhite;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.nav-bar .logo span {
+    transform: translateX(-10px);
+}
+
+.nav-bar .logo img {
+    animation-name: logo-rotation;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+.nav-bar .ctas {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.nav-bar .ctas a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: antiquewhite;
+    font-weight: bold;
+    padding: 10px;
+    transition-property: background-color, color;
+    transition-duration: .6s;
+    border-radius: 10px;
+}
+
+.nav-bar .ctas a:hover {
+    background-color: #6876aa;
+    color: #f7ce98;
+}
+
+
+@keyframes logo-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

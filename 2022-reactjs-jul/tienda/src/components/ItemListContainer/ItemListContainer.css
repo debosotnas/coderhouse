@@ -1,0 +1,14 @@
+.item-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.item-list-container .loading {
+    max-width: 500px;
+    border: 1px solid salmon;
+    padding: 40px;
+    font-size: 20px;
+    color: brown;
+}

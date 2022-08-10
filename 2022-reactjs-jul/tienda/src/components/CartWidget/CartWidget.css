@@ -1,0 +1,7 @@
+.cart-widget {
+    display: flex;
+    align-items: center;
+}
+.cart-widget .material-symbols-outlined {
+    color: antiquewhite;
+}

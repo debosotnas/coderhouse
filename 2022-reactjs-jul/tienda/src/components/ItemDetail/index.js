@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount";
 import "./ItemDetail.css";
+
+import { CartContext } from '../../context/CartContext';
 
 export default function ItemDetail({
     id,
@@ -11,6 +13,9 @@ export default function ItemDetail({
     initial,
     images,
 }) {
+
+    const { addCartItem } = useContext(CartContext);
+
     const firstImageInfo = Array.isArray(images) && images.length && images[0];
 
     //>>>>>> Inicio de aclaracion de para primera entrega
@@ -19,6 +24,9 @@ export default function ItemDetail({
     // -- al llamar a ItemCount, el uso de "productAddedToCard" o la llamada a "onAdd" dentro del componente ItemCount.
     const [productAddedToCard, setProductAddedToCard] = useState(false);
     const onAdd = (quantityToAdd) => {
+
+        addCartItem( { id, quantity: quantityToAdd } );
+
         console.log(
             ">> Evento recibido del ItemCount! - Cantidad agregada: ",
             quantityToAdd

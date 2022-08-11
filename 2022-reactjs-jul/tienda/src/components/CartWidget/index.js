@@ -7,6 +7,7 @@ export default function CartWidget() {
         <span className="material-symbols-outlined">
             shopping_cart
         </span>
+        <span>5</span>
     </a>
   )
 }

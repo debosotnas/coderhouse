@@ -1,4 +1,4 @@
-const DATA = [
+export const DATA = [
     {
         id: 1,
         category: 1,

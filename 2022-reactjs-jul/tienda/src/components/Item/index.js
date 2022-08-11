@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import ItemCount from "../ItemCount";
 import './Item.css'
 
 export default function Item({
@@ -9,6 +8,15 @@ export default function Item({
     description,
     images,
 }) {
+
+    // const valuesDelContext = useContext(CartContext);
+    // // const { productos, saludar } = useContext(CartContext);
+
+    // // console.log('>> Productos: ', productos);
+    // // saludar();
+    // console.log('>> Desde el context: ', valuesDelContext);
+
+
     const firstImageInfo = Array.isArray(images) && images.length && images[0];
 
     return (

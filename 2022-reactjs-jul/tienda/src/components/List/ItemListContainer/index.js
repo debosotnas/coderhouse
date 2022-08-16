@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getProductsData } from "../../api/APIData";
+import { getProductsData } from "../../../api/APIData";
 import ItemList from "../ItemList";
 import './ItemListContainer.css';
 

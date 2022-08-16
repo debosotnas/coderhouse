@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount";
 import "./ItemDetail.css";
 
-import { CartContext } from '../../context/CartContext';
+import { CartContext } from '../../../context/CartContext';
 
 export default function ItemDetail({
     id,
     title,
+    price,
     description,
     stock,
     initial,
@@ -18,14 +19,17 @@ export default function ItemDetail({
 
     const firstImageInfo = Array.isArray(images) && images.length && images[0];
 
-    //>>>>>> Inicio de aclaracion de para primera entrega
-    // -- Esto no es parte de la primera entrega del proyecto.
-    // -- asi como tampoco es parte de la primera entrega el uso de "onAddItemsToCart={onAdd}"
-    // -- al llamar a ItemCount, el uso de "productAddedToCard" o la llamada a "onAdd" dentro del componente ItemCount.
     const [productAddedToCard, setProductAddedToCard] = useState(false);
     const onAdd = (quantityToAdd) => {
 
-        addCartItem( { id, quantity: quantityToAdd } );
+        addCartItem( { 
+            id, 
+            title,
+            quantity: quantityToAdd,
+            image: firstImageInfo.src,
+            description,
+            price
+         } );
 
         console.log(
             ">> Evento recibido del ItemCount! - Cantidad agregada: ",
@@ -33,12 +37,13 @@ export default function ItemDetail({
         );
         setProductAddedToCard(true);
     };
-    ///>>>>>> Fin de aclaracion de para primera entrega
+
 
     return (
         <div className="item-detail">
             <img src={firstImageInfo.src} alt="" />
             <div className="title">{title}</div>
+            <div className="price">$ {price}</div>
             <p>{description}</p>
             {productAddedToCard ? <Link to={`/cart`} >Producto agregado, ver carrito!</Link> : (
                 <ItemCount

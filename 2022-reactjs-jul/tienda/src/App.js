@@ -1,15 +1,15 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { ItemDetailContainer } from './components/Detail';
+import { ItemListContainer } from './components/List';
 import Cart from "./components/Cart";
-import ItemDetailContainer from "./components/ItemDetailContainer";
-import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
-import CartCustomContext from './context/CartContext';
+import CartCustomProvider from './context/CartContext';
 
 function App() {
 
     return (
-        <CartCustomContext>
+        <CartCustomProvider>
             <BrowserRouter>
                 <div className="container">
                     <NavBar />
@@ -28,7 +28,7 @@ function App() {
                     </Routes>
                 </div>
             </BrowserRouter>
-        </CartCustomContext>
+        </CartCustomProvider>
     );
 }
 

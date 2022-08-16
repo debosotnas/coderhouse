@@ -6,6 +6,7 @@ export const DATA = [
         description: 'this is the first description',
         stock: 3,
         initial: 1,
+        price: 10,
         images: [
             { 
                 id: 0,
@@ -20,6 +21,7 @@ export const DATA = [
         description: 'this is the second description',
         stock: 5,
         initial: 1,
+        price: 15,
         images: [
             { 
                 id: 0,
@@ -34,6 +36,7 @@ export const DATA = [
         description: 'this is the third description',
         stock: 6,
         initial: 1,
+        price: 20,
         images: [
             { 
                 id: 0,
@@ -48,6 +51,7 @@ export const DATA = [
         description: 'this is the fourth description',
         stock: 10,
         initial: 1,
+        price: 25,
         images: [
             { 
                 id: 0,

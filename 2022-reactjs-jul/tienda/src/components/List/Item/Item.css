@@ -11,9 +11,15 @@
     background-color: rgb(235, 236, 255);
 }
 
-.item img {
+.item .imgs {
     border: 3px solid rgb(248, 185, 140);
-    max-width: 400px;
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.item:hover .imgs {
+    border: 3px solid rgb(147, 140, 248);
 }
 
 .item .title {
@@ -25,9 +31,6 @@
 }
 .item:hover .title {
     color: blueviolet;
-}
-.item:hover img {
-    border: 3px solid rgb(147, 140, 248);
 }
 
 .item p {

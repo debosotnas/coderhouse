@@ -1,3 +1,9 @@
+import { collection, getDocs } from 'firebase/firestore'
+import { DB } from './APIFirebase'
+
+// esta variable ya no es usada cuando se cargan los productos por categoria
+// queda pendiente la búsqueda por categoría y la búsqueda individual
+// (luego será eliminada)
 export const DATA = [
     {
         id: 1,
@@ -61,19 +67,38 @@ export const DATA = [
     }
 ]
 
+
+
 const TESTING_DELAY = 500;
 
 export function getProductsData (categoryId) {
-    console.log('> CategoryId: ', categoryId)
+
+    // TODO: Realizar un refactor utilizando Async/Await en lugar de Promise.then
+
     return new Promise( (resolve, reject) => {
-        setTimeout(() => {
-            if (categoryId) {
-                resolve(DATA.filter(prod => prod.category === categoryId));
-            } else {
-                resolve(DATA);
-            }
-        }, TESTING_DELAY);
+        // creo la referencia a la coleccion que quiero traer
+        const colRef = collection(DB,'productos');
+        getDocs(colRef).then((snapshot) => {
+            console.log('>> snapshot.docs: ', snapshot.docs);
+
+
+            const productosConFormato = snapshot.docs.map((rawDoc) => {
+                return {
+                    id: rawDoc.id,
+                    ...rawDoc.data()
+                }
+
+            });
+
+            console.log('>> Productos:', productosConFormato);
+            resolve(productosConFormato);
+
+        }, (error) => {
+            reject('>> Error al intentar traer los docs: ', error);
+        });
     });
+
+
 }
 
 export function getItem (id) {

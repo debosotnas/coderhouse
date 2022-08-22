@@ -71,7 +71,7 @@ export const DATA = [
 
 const TESTING_DELAY = 500;
 
-export function getProductsData (categoryId) {
+export function getProductsDataOld (categoryId) {
 
     // TODO: Realizar un refactor utilizando Async/Await en lugar de Promise.then
 
@@ -99,6 +99,29 @@ export function getProductsData (categoryId) {
     });
 
 
+}
+
+// version simplificada de 'getProductsDataOld' usando async/await
+export async function getProductsData (categoryId) {
+
+    let response = [];
+    // creo la referencia a la coleccion que quiero traer
+    const colRef = collection(DB,'productos');
+
+    try {
+        const snapshot = await getDocs(colRef); // ya no necesito más el then
+
+        response = snapshot.docs.map((rawDoc) => {
+            return {
+                id: rawDoc.id,
+                ...rawDoc.data()
+            }
+        });
+        
+    } catch (err) {
+        console.log('>> Error al intentar traer los docs: ', err);
+    } 
+    return response;
 }
 
 export function getItem (id) {

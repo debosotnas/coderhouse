@@ -13,6 +13,7 @@ export default function ItemListContainer() {
 
         setProductsData([]);
 
+        /*
         const productsDataPromise = getProductsData(categoryId);
 
         productsDataPromise.then(
@@ -26,6 +27,16 @@ export default function ItemListContainer() {
                 );
             }
         );
+        */
+
+        // esto reemplaza lo anterior
+        async function getD () {
+            const productsPosta = await getProductsData(categoryId);
+            setProductsData(productsPosta);
+        }
+
+        getD ();
+
     }, [categoryId]);
 
     return (
